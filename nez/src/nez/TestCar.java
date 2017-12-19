@@ -14,8 +14,11 @@ public class TestCar {
         Car ferrari;
         ferrari = new Car();
         ferrari.setYear(2017);
+        ferrari.setKM(-6);
+        ferrari.setlicensePlate("G554544");
         
-        System.out.println("nez.TestCar.main()"+ ferrari.getDes());
+        System.out.println("The ferrary test "+ ferrari.getDes());
+        
         //ferrari.color = "Yellow";
         //ferrari.km = 250;
         //ferrari.licensePlate="65454654687";
