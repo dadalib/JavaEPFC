@@ -30,6 +30,27 @@ public class Car {
         }
       */
     }
+    public String getlicensePlate()
+    {
+        return licensePlate;
+    }
+    
+    public void setlicensePlate( String licensePlate)
+    {
+        if(licensePlate.length() !=7) return;
+        /*
+        if('A' <= licensePlate.charAt(0) && licensePlate.charAt(0) <='Z')
+        {
+            this.licensePlate = licensePlate;
+        }
+*/
+        if(licensePlate.substring(0,1).matches("[A-Z].*"))
+        //if(licensePlate.substring(0,1).matches("[A-Z]"))
+        {
+            System.out.println("R");
+            this.licensePlate = licensePlate;
+        }
+    }
     
     public int  getKM()
     {
@@ -39,10 +60,22 @@ public class Car {
         if ( 0<= km && km <1000000)
         {
           this.km =km;
+            System.err.println("Error 0<km<10000000 ");
         }
         
     }
-       
+    public String getColor()
+    {
+        return color;
+    }
+    
+    public void setColor(String color)
+    {
+        if(color.equals("blanc"))
+        {
+            this.color = color;
+        }
+    }
     
             
     String getDes()
