@@ -24,11 +24,11 @@ public class DemoAliment {
         
         produitList[0] = new Aliment("cornichon",cat ,60,1);
         
-        for (Aliment aliment : produitList) 
-        {
+        //for (Aliment aliment : produitList) 
+        //{
            
-            System.out.println(Aliment);   
-        }
+        
+        //}
         
         
         
